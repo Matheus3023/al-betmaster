@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body {
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  .background {
+  background-image: linear-gradient(to bottom right, #292C40, #1B4039, #0D402D, #085933, #085933, #045929);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  header h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 3px rgb(250, 249, 249);
+  }
+  
+  nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  nav li {
+  margin-left: 20px;
+  }
+  
+  nav a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
+  nav a:hover {
+  color: #ccc;
+  }
+  
+  main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  }
+  
+  .plan-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  
+  .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .plan:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  }
+  
+  .plan p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  }
+  
+  .plan ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  .plan li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  }
+  
+  .plan li:last-child {
+  border: none;
+  }
+  
+  .buy-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .buy-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .buy-btn:hover {
+    background-color: #3E8E41;
+  }
+  .info {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 18px;
+  }
+  
+  .info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  }
+  
+  .info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  }
+  
+  .info button {
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  }
+  
+  .info button:hover {
+  background-color: #3E8E41;
+  }
+  
+  .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .footer p {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+  nav {
+  flex-direction: column;
+  }
+  
+  nav li {
+  margin-left: 0;
+  margin-bottom: 10px;
+  }
+  
+  nav ul {
+  margin-top: 10px;
+  }
+  
+  header {
+  flex-direction: column;
+  text-align: center;
+  }
+  
+  header h1 {
+  font-size: 24px;
+  }
+  
+  .plan {
+  width: 100%;
+  margin: 10px 0;
+  }
+  
+  .plan h2 {
+  font-size: 24px;
+  }
+  
+  .plan p {
+  font-size: 18px;
+  }
+  
+  .info h3 {
+  font-size: 20px;
+  }
+  
+  .info p {
+  font-size: 16px;
+  }
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .background {
+    min-height: 100%;
+  }
+  
+ /* Define a fonte personalizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Aplica as classes aos elementos HTML */
+.oferta {
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: white;
+  line-height: 1.2;
+}
+
+.apresentacao {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: white;
+  line-height: 1.2;
+}
+  
